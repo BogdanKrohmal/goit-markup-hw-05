@@ -121,6 +121,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-link-color);
+   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list {
   color: var(--stud-hover-focus-color);
@@ -194,6 +196,8 @@ img {
   color: var(--header-mail-color);
   display: flex;
   align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .portfolio-btn:hover {
@@ -203,21 +207,18 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--stud-hover-focus-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .header-mail:hover,
 .header-mail:focus {
   color: var(--stud-hover-focus-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .header-tel:hover,
 .header-tel:focus {
   color: var(--stud-hover-focus-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 /* -------------main---------------- */
@@ -391,6 +392,8 @@ img {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon {
@@ -400,8 +403,7 @@ img {
 .team-soc-link:focus {
   background-color: #2196f3;
   color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 /* .team-item{
@@ -455,6 +457,8 @@ img {
   justify-content: center;
   display: flex;
   color: #afb1b8;
+   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-clients-icon {
@@ -480,14 +484,12 @@ img {
 .address-mail:hover,
 .address-list:focus {
   color: var(--stud-hover-focus-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .address-tel:hover,
 .address-tel:focus {
   color: var(--stud-hover-focus-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .footer {
   background-color: var(--footer-bgr-color);
@@ -529,6 +531,8 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: block;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address {
   font-style: normal;
@@ -537,6 +541,8 @@ img {
   display: flex;
   gap: 9px;
   flex-direction: column;
+   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-title {
@@ -577,6 +583,8 @@ img {
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
@@ -586,8 +594,7 @@ img {
 .footer-soc-link:focus {
   background-color: #2196f3;
   color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 /* .address-meil {
@@ -623,7 +630,8 @@ img {
   border: transparent;
   display: inline-block;
   padding: 6px 22px;
- 
+ transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn:hover,
@@ -632,8 +640,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .portfolio-link {
   display: block;
@@ -683,12 +690,13 @@ img {
 
 .portfolio-item {
   background-color: var(--port-item-bgr-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .portfolio-link-text {
   transform: translateY(0);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .portfolio-title {
@@ -714,8 +722,7 @@ img {
 .portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 /* modal */
@@ -734,13 +741,14 @@ img {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   width: 528px;
   min-height: 581px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 300ms linear;
+  /* overflow: scroll; */
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
